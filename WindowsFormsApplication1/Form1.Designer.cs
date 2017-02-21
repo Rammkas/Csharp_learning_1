@@ -129,13 +129,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private struct Secuence
-        {
-            int num_of_elements;
-            int element;
-        }
-
-        private Secuence secuence;
+        
 
     }
 }
