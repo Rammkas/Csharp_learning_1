@@ -74,7 +74,7 @@ namespace WindowsFormsApplication1
              int
              int[]
              */
-            sec1_to_file.elements =  new int[100];
+            sec1_to_file.elements =  new int[Total_numbers_of_elements];
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 fileName = saveFileDialog1.FileName;
@@ -96,6 +96,11 @@ namespace WindowsFormsApplication1
             {
                 secuence1.elements[i] = i * 3 + i; 
             }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test Application.\nTest C#, WinForm's and GitHub.\nПора заняться делом.","About application.");
         }
     }
 }
