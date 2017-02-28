@@ -76,17 +76,18 @@ namespace WindowsFormsApplication1
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             this.saveToolStripMenuItem.Enabled = false;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.ToolTipText = "If grey - data is not generated.";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // generateToolStripMenuItem
             // 
@@ -101,6 +102,7 @@ namespace WindowsFormsApplication1
             this.generateDataSecuenceToolStripMenuItem.Name = "generateDataSecuenceToolStripMenuItem";
             this.generateDataSecuenceToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.generateDataSecuenceToolStripMenuItem.Text = "Generate data secuence";
+            this.generateDataSecuenceToolStripMenuItem.ToolTipText = "Can generate only one secuence by one  time.";
             this.generateDataSecuenceToolStripMenuItem.Click += new System.EventHandler(this.generateDataSecuenceToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
@@ -153,7 +155,7 @@ namespace WindowsFormsApplication1
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Test Application";
+            this.Text = "C# Test Application - Data Generator and checker.";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
+
+using System.Collections.Generic;
 
 namespace WindowsFormsApplication1
 {
@@ -40,9 +43,9 @@ namespace WindowsFormsApplication1
         // Global variable
         
         /// <summary>
-        /// Constat number of data elements
+        /// Constat number of data elements - Now it's == 100 000
         /// </summary>
-        public const uint Total_numbers_of_elements = 1000000;
+        public const uint Total_numbers_of_elements = 100000;
 
         /// <summary>
         /// if == true -> data secuence ready to save to file
