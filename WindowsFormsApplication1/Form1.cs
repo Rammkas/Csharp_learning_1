@@ -41,18 +41,15 @@ namespace WindowsFormsApplication1
             string fileName;
             Secuence1 sec1_from_file;
             FileHeader fh;
-            /*
-             read from file
-              string
-              int
-              int[]
-             */
+            
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 fileName = openFileDialog1.FileName;
                 label2.Text = fileName;
-               
-                BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)); //создаем бинарный «потоковый читатель» и связываем его с файловым потоком
+                
+                //создаем бинарный «потоковый читатель» и связываем его с файловым потоком
+                BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)); 
+
                 fh.Magic = reader.ReadString();
                 fh.Num_of_elements = reader.ReadInt32();
                 sec1_from_file.elements = new int[fh.Num_of_elements];
