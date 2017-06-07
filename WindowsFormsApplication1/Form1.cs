@@ -24,9 +24,11 @@ namespace WindowsFormsApplication1
 
             //Custom variable initialize
 
+            myform = new CustomDialogForm_01();
             secuence_of_data.elements = new List<uint>();
             data_from_file.elements = new List<uint>();
             isDataGenerated = false;
+            label4.Text = Total_numbers_of_elements.ToString();
         }
         
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -154,6 +156,22 @@ namespace WindowsFormsApplication1
                     isDataGenerated = true;
                 }
             }
+        }
+
+        private void dataSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (myform.ShowDialog() == DialogResult.OK)
+            {
+                Total_numbers_of_elements = UInt32.Parse(myform.maskedTextBox1.Text);
+                label4.Text = myform.maskedTextBox1.Text;
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

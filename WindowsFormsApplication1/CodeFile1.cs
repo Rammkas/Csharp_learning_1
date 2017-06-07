@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
         /// <summary>
         /// Constat number of data elements - Now it's == 100 000
         /// </summary>
-        public const uint Total_numbers_of_elements = 100000;
+        public uint Total_numbers_of_elements = 100000;
 
         /// <summary>
         /// if == true -> data secuence ready to save to file
@@ -56,6 +56,8 @@ namespace WindowsFormsApplication1
         /// </summary>
         public Secuence_of_data secuence_of_data;
         public Secuence_of_data data_from_file;
+
+        public CustomDialogForm_01 myform;
 
     }
 

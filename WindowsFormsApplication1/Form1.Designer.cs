@@ -45,6 +45,9 @@ namespace WindowsFormsApplication1
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +79,7 @@ namespace WindowsFormsApplication1
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -84,7 +87,7 @@ namespace WindowsFormsApplication1
             // 
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.ToolTipText = "If grey - data is not generated.";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -92,7 +95,8 @@ namespace WindowsFormsApplication1
             // generateToolStripMenuItem
             // 
             this.generateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generateDataSecuenceToolStripMenuItem});
+            this.generateDataSecuenceToolStripMenuItem,
+            this.dataSettingsToolStripMenuItem});
             this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
             this.generateToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.generateToolStripMenuItem.Text = "Generate";
@@ -128,7 +132,7 @@ namespace WindowsFormsApplication1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 69);
+            this.label1.Location = new System.Drawing.Point(12, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 5;
@@ -136,16 +140,42 @@ namespace WindowsFormsApplication1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 108);
+            this.label2.Location = new System.Drawing.Point(12, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 6;
+            // 
+            // dataSettingsToolStripMenuItem
+            // 
+            this.dataSettingsToolStripMenuItem.Name = "dataSettingsToolStripMenuItem";
+            this.dataSettingsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.dataSettingsToolStripMenuItem.Text = "Data settings";
+            this.dataSettingsToolStripMenuItem.Click += new System.EventHandler(this.dataSettingsToolStripMenuItem_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(276, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Current number of elements to use in generation method: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(289, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 438);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -156,6 +186,7 @@ namespace WindowsFormsApplication1
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C# Test Application - Data Generator and checker.";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -177,6 +208,9 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.ToolStripMenuItem generateDataSecuenceToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem dataSettingsToolStripMenuItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
